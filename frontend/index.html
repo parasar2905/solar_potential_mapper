@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Potential Mapper & Feasibility Checker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">Solar Potential & Feasibility Checker</h1>
+
+      <!-- Solar Potential Mapper Section -->
+      <div class="section">
+        <h2 class="sub-title">Solar Potential Mapper</h2>
+        <div id="map" class="map-section"></div>
+        <div class="coordinates">
+          <p>
+            <strong>Selected Coordinates:</strong>
+            <span id="coordinates">None</span>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <!-- Solar Potential Mapper Section -->
+        <div class="section">
+          <h1 class="title">Solar Potential Mapper of India</h1>
+          <!--<div class="solar-mapper">
+          <div class="map-section">
+            <img
+              src="icons/solar-map-india.png"
+              alt="Solar Potential Map of India"
+            />
+          </div>
+        -->
+          <div class="form-section">
+            <div class="input-box">
+              <label for="monthly-bill">Enter Your Current Monthly Bill</label>
+              <input type="text" id="monthly-bill" placeholder="In Rupees ₹" />
+              <button>Enter</button>
+            </div>
+            <div class="input-box">
+              <label for="rooftop-size">Enter the Size of Rooftop</label>
+              <input type="text" id="rooftop-size" placeholder="In sq feet" />
+              <button>Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feasibility Checker Section -->
+      <div class="section">
+        <h1 class="title">Feasibility Checker</h1>
+        <div class="feasibility-checker">
+          <div class="icons-section">
+            <div class="icon-box active">
+              <img src="icons/residential-icon.png" alt="Residential" />
+              <p>residential</p>
+            </div>
+            <div class="icon-box">
+              <img src="icons/commercial-icon.png" alt="Commercial" />
+              <p>commercial</p>
+            </div>
+            <div class="icon-box">
+              <img src="icons/industrial-icon.png" alt="Industrial" />
+              <p>industrial</p>
+            </div>
+          </div>
+          <div class="input-section">
+            <label for="unit-cost">Enter Per Unit Cost (Rs/KWh)</label>
+            <input type="text" id="unit-cost" placeholder="Enter cost" />
+            <button>Enter</button>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <div class="info-row">
+            <label>Power Consumed Per Year</label>
+            <input type="text" readonly />
+          </div>
+          <div class="info-row">
+            <label>Power Produced By Panels</label>
+            <input type="text" readonly />
+          </div>
+          <div class="info-row">
+            <label>Estimated Investment Needed</label>
+            <input type="text" readonly />
+          </div>
+          <div class="feasibility-status">
+            <p>
+              <span class="status-feasible">FEASIBLE</span> /
+              <span class="status-not-feasible">NOT FEASIBLE</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
